@@ -13,25 +13,25 @@ Data Ingestion → Data Processing → Modeling → Conclusion
 
 ## DEFINITIONS
 
-Forward Fundamentals (FF): What the market currently expects a company to earn or grow into, going forward. Measured indirectly in this study through valuation multiple behavior, not analyst forecasts.
+**Forward Fundamentals (FF)**: What the market currently expects a company to earn or grow into, going forward. Measured indirectly in this study through valuation multiple behavior, not analyst forecasts.
 
-Valuation Multiple: A ratio like price-to-earnings (P/E) that expresses how much investors are paying for a company's earnings.
+**Valuation Multiple**: A ratio like price-to-earnings (P/E) that expresses how much investors are paying for a company's earnings.
 
-Expansion / Contraction: Whether a stock's multiple is rising or falling over time. This study only measures direction and rate of change, not whether a multiple is objectively high or low.
+**Expansion / Contraction**: Whether a stock's multiple is rising or falling over time. This study only measures direction and rate of change, not whether a multiple is objectively high or low.
 
-SPDR (Standard & Poor's Depositary Receipts): A family of exchange-traded funds (ETFs), including sector-specific funds that track segments of the S&P 500 (e.g. technology, healthcare, financials). Used here as the source of each stock's peer group, via their fund holdings.
+**SPDR (Standard & Poor's Depositary Receipts)**: A family of exchange-traded funds (ETFs), including sector-specific funds that track segments of the S&P 500 (e.g. technology, healthcare, financials). Used here as the source of each stock's peer group, via their fund holdings.
 
-S&P 500: A market index of 500 large, publicly traded U.S. companies, maintained by S&P Dow Jones Indices. Referenced as the underlying universe SPDR sector ETFs are built from.
+**S&P 500**: A market index of 500 large, publicly traded U.S. companies, maintained by S&P Dow Jones Indices. Referenced as the underlying universe SPDR sector ETFs are built from.
 
-GICS (Global Industry Classification Standard): The sector/industry classification system used by S&P, and by extension SPDR, to group companies. Referenced here only as the basis for peer grouping, not applied directly.
+**GICS (Global Industry Classification Standard)**: The sector/industry classification system used by S&P, and by extension SPDR, to group companies. Referenced here only as the basis for peer grouping, not applied directly.
 
-VIX (Volatility Index): Often called the market's "fear gauge," VIX measures expected volatility in the S&P 500 over the next 30 days. Sourced from FRED. Used in this study as a filter for market-wide sentiment, so results can be checked and compared between  calm vs turbulent conditions.
+**VIX (Volatility Index)**: Often called the market's "fear gauge," VIX measures expected volatility in the S&P 500 over the next 30 days. Sourced from FRED. Used in this study as a filter for market-wide sentiment, so results can be checked and compared between  calm vs turbulent conditions.
 
-Corporate Bond Yields: Interest rates on corporate debt, used here as a secondary gauge of broader financing conditions alongside VIX. Sourced from FRED.
+**Corporate Bond Yields**: Interest rates on corporate debt, used here as a secondary gauge of broader financing conditions alongside VIX. Sourced from FRED.
 
-FRED (Federal Reserve Economic Data): A public database maintained by the Federal Reserve Bank of St. Louis, providing macroeconomic and financial time series data.
+**FRED (Federal Reserve Economic Data)**: A public database maintained by the Federal Reserve Bank of St. Louis, providing macroeconomic and financial time series data.
 
-EDGAR (Electronic Data Gathering, Analysis, and Retrieval): The U.S. Securities and Exchange Commission's (SEC) public database of company filings. Used both directly, via its structured XBRL companyfacts API for bulk historical financial data, and indirectly through edgartools, a library that parses the underlying filed documents for metadata (industry, SIC code, fiscal year end) not easily available through the raw API. Both are the same underlying SEC data, accessed through different extraction methods.
+**EDGAR (Electronic Data Gathering, Analysis, and Retrieval)**: The U.S. Securities and Exchange Commission's (SEC) public database of company filings. Used both directly, via its structured XBRL companyfacts API for bulk historical financial data, and indirectly through edgartools, a library that parses the underlying filed documents for metadata (industry, SIC code, fiscal year end) not easily available through the raw API. Both are the same underlying SEC data, accessed through different extraction methods.
 
 ## DESIGN AND PROCESS
 
